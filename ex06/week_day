@@ -1,0 +1,27 @@
+#!/bin/bash
+
+read -p "Choose a number between 0-6." ANSWER
+case "$ANSWER" in
+	[0] )
+       echo "Sunday"
+       ;;
+        [1] )
+       echo "Monday"
+       ;;
+        [2] )
+       echo "Thursday"
+       ;;
+        [3] )
+       echo "Wednesday"
+       ;;
+        [4] )
+       echo "Tuesday"
+       ;;
+        [5] )
+       echo "Friday"
+       ;;
+        [6] )
+       echo "Saturday"
+       ;;
+esac
+

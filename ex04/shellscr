@@ -1,0 +1,18 @@
+#!/bin/bash
+
+echo "Enter $NAME of a file"
+read $NAME
+
+read -p "Is $NAME a regular file or a directory? Y/N?" ANSWER
+case "$ANSWER" in
+	[yY])
+        	echo "$NAME is a regular file or a directory."
+        ;;
+        [nN] )
+        	echo "$NAME is another type of file."
+        ;;
+      *)
+	       echo "Please enter y/yes or n/no"
+        ;;
+esac
+ls -l shellscr
